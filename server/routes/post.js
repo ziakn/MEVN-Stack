@@ -1,7 +1,7 @@
 
 const express = require("express");
 const router = express.Router();
-const API = require("../controllers/api");
+const API = require("../controllers/post");
 const multer = require("multer");
 
 //multer middle ware

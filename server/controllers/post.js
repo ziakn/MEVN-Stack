@@ -1,5 +1,5 @@
 const Post = require("../models/Posts");
-const post  = require("../routes/routes");
+const post  = require("../routes/post");
 const fs = require("fs");
 
 module.exports = class API{
@@ -26,6 +26,7 @@ static async fetchPostById(request, response) {
 
 static async creatPost(request, response) {
 
+    console.log(1);
     const post = request.body;
     console.log(request.body)
     const imagename = request.file.filename;
